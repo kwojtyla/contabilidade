@@ -25,5 +25,59 @@ export const theme = {
     },
   },
   spacing: {},
-  typography: {},
+  typography: {
+    mobile: {
+      h3: {
+        fontFamily: "Poppins, sans-serif",
+        fontWeight: 500,
+        fontSize: "1.5rem",
+        lineHeight: "2rem",
+      },
+    },
+    desktop: {
+      h3: {
+        fontFamily: "Poppins, sans-serif",
+        fontWeight: 500,
+        fontSize: "2.25rem",
+        lineHeight: "2.75rem",
+      },
+    },
+    body: {
+      regular: {
+        medium: {
+          fontFamily: "Inter, sans-serif",
+          fontWeight: 500,
+          fontSize: "1rem",
+          lineHeight: "1.5rem",
+        },
+        bold: {
+          fontFamily: "Inter, sans-serif",
+          fontWeight: 700,
+          fontSize: "1rem",
+          lineHeight: "1.5rem",
+        },
+      },
+      big: {
+        medium: {
+          fontFamily: "Inter, sans-serif",
+          fontWeight: 500,
+          fontSize: "1.125rem",
+          lineHeight: "1.5rem",
+        },
+        bold: {
+          fontFamily: "Inter, sans-serif",
+          fontWeight: 700,
+          fontSize: "1.125rem",
+          lineHeight: "1.5rem",
+        },
+      },
+    },
+  },
+  breakpoints: {
+    mobile: "22.5em",
+    tablet: "48em",
+    desktop: "64em",
+  },
 };
+
+export type Theme = typeof theme;
