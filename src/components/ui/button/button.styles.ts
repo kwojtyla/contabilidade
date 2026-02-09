@@ -44,7 +44,7 @@ const variantStyles = {
 
 export const StyledButton = styled.button<StyledButtonProps>`
   border-radius: 3.625rem;
-  padding: 0.75rem 2rem;
+  padding: ${({ theme }) => theme.spacing.sm} ${({ theme }) => theme.spacing.xl};
   font-family: ${({ theme }) =>
     theme.typography.body.regular.medium.fontFamily};
   font-weight: ${({ theme }) =>
@@ -54,6 +54,16 @@ export const StyledButton = styled.button<StyledButtonProps>`
     theme.typography.body.regular.medium.lineHeight};
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+
+  &:focus-visible {
+    outline: 2px solid ${({ theme }) => theme.colors.tertiary.t700};
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 
   ${({ $fill }) => $fill && "width: 100%;"}
   ${({ variant }) => variantStyles[variant]}

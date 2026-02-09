@@ -1,1 +1,1 @@
-export { H3, P, Strong } from "./typograpy";
+export { H3, P, Strong } from "./typography";

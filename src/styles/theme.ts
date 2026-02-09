@@ -3,6 +3,17 @@ const fonts = {
   poppins: "Poppins, sans-serif",
 } as const;
 
+const spacing = {
+  xs: "0.5rem", // 8px
+  sm: "0.75rem", // 12px
+  md: "1rem", // 16px
+  lg: "1.5rem", // 24px
+  xl: "2rem", // 32px
+  "2xl": "2.25rem", // 36px
+  "3xl": "2.5rem", // 40px
+  "4xl": "3.75rem", // 60px
+} as const;
+
 export const theme = {
   colors: {
     primary: {
@@ -29,7 +40,7 @@ export const theme = {
       t700: "#2B79DF",
     },
   },
-  spacing: {},
+  spacing,
   fonts,
   typography: {
     mobile: {

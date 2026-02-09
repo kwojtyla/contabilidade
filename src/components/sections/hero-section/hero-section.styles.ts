@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2.25rem;
+  gap: ${({ theme }) => theme.spacing["2xl"]};
   position: relative;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
@@ -36,7 +36,7 @@ export const Blur = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2.25rem;
+  gap: ${({ theme }) => theme.spacing["2xl"]};
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     flex: 1;
@@ -48,7 +48,7 @@ export const TextContainer = styled.div`
   align-items: center;
   text-align: center;
   flex-direction: column;
-  gap: 2.25rem;
+  gap: ${({ theme }) => theme.spacing["2xl"]};
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     text-align: left;
@@ -61,22 +61,22 @@ export const ActionsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
+  gap: ${({ theme }) => theme.spacing.sm};
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: ${({ theme }) => theme.spacing.xs};
   }
 `;
 
 export const Buttons = styled.div`
   display: flex;
   width: 100%;
-  gap: 2.25rem;
+  gap: ${({ theme }) => theme.spacing["2xl"]};
   flex-direction: column;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     flex-direction: row;
-    gap: 1rem;
+    gap: ${({ theme }) => theme.spacing.md};
   }
 `;

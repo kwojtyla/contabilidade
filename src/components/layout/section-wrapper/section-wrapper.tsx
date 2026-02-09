@@ -1,9 +1,7 @@
 import { Container } from "./section-wrapper.styles";
 
-interface SectionWrapperProps {
-  children: React.ReactNode;
-}
-
-export const SectionWrapper = ({ children }: SectionWrapperProps) => {
+export const SectionWrapper = ({
+  children,
+}: React.ComponentProps<"section">) => {
   return <Container>{children}</Container>;
 };

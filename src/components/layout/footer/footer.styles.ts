@@ -4,8 +4,9 @@ export const Container = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  padding: 2.5rem 1rem;
+  gap: ${({ theme }) => theme.spacing.md};
+  padding: ${({ theme }) => theme.spacing["3xl"]}
+    ${({ theme }) => theme.spacing.md};
   background-color: ${({ theme }) => theme.colors.neutral.n50};
   border-top: 1px solid ${({ theme }) => theme.colors.neutral.n100};
 `;

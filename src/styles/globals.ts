@@ -1,8 +1,9 @@
 import { createGlobalStyle } from "styled-components";
+import { theme } from "./theme";
 
 export const Globals = createGlobalStyle`
   :root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: ${theme.fonts.inter};
     line-height: 1.5;
     font-weight: 400;
 

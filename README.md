@@ -62,7 +62,6 @@ src/
 │   ├── sections/       # Seções (dobras) da página
 │   └── ui/             # Componentes globais reutilizáveis
 ├── constants/          # Constantes do projeto
-├── hooks/              # Custom hooks
 ├── styles/             # Estilos globais e tema do Styled-Components
 └── types/              # Interfaces e tipos TypeScript
 ```

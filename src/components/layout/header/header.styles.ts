@@ -4,7 +4,7 @@ export const Container = styled.header<{ $scrolled: boolean }>`
   position: sticky;
   top: 0;
   z-index: 50;
-  padding: 1rem;
+  padding: ${({ theme }) => theme.spacing.md};
   background-color: ${({ theme }) => theme.colors.neutral.n0};
   transition: all 0.3s ease;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -18,7 +18,8 @@ export const Container = styled.header<{ $scrolled: boolean }>`
   `}
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    padding: 1rem 2rem;
+    padding: ${({ theme }) => theme.spacing.md}
+      ${({ theme }) => theme.spacing.xl};
     margin: 0 auto;
   }
 `;

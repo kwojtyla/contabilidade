@@ -4,19 +4,19 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.25rem;
+  gap: ${({ theme }) => theme.spacing["2xl"]};
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     flex-direction: row-reverse;
     max-width: 1024px;
-    gap: 1.5rem;
+    gap: ${({ theme }) => theme.spacing.lg};
   }
 `;
 
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2.25rem;
+  gap: ${({ theme }) => theme.spacing["2xl"]};
   text-align: center;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
@@ -27,7 +27,7 @@ export const TextContainer = styled.div`
 export const Description = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: ${({ theme }) => theme.spacing.md};
 `;
 
 export const ImageContainer = styled.div`

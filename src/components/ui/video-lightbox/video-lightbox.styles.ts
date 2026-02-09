@@ -7,7 +7,7 @@ export const Overlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: ${({ theme }) => theme.colors.neutral.n900}ee;
   padding: 1rem;
 `;
 
@@ -23,8 +23,8 @@ export const VideoWrapper = styled.div`
 
 export const CloseButton = styled.button`
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: ${({ theme }) => theme.spacing.md};
+  right: ${({ theme }) => theme.spacing.md};
   z-index: 1001;
   background: transparent;
   border: none;
@@ -40,7 +40,7 @@ export const CloseButton = styled.button`
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: ${({ theme }) => theme.colors.neutral.n600};
   }
 `;
 
