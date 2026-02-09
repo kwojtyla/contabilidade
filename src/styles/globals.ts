@@ -19,7 +19,7 @@ export const Globals = createGlobalStyle`
   }
 
   body {
-    color: ${({ theme }) => theme.colors.neutral.n0};
-    background-color: ${({ theme }) => theme.colors.neutral.n900};
+    color: ${({ theme }) => theme.colors.neutral.n900};
+    background-color: ${({ theme }) => theme.colors.neutral.n0};
   }
 `;

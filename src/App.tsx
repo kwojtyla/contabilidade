@@ -1,11 +1,11 @@
-import styled from "styled-components";
-
-const Container = styled.div`
-  background-color: ${({ theme }) => theme.colors.primary.p500};
-`;
+import { InfoSection } from "./components/sections/info-section";
 
 function App() {
-  return <Container>Oi</Container>;
+  return (
+    <>
+      <InfoSection />
+    </>
+  );
 }
 
 export default App;
