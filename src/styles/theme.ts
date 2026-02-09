@@ -1,3 +1,8 @@
+const fonts = {
+  inter: "Inter, sans-serif",
+  poppins: "Poppins, sans-serif",
+} as const;
+
 export const theme = {
   colors: {
     primary: {
@@ -25,10 +30,11 @@ export const theme = {
     },
   },
   spacing: {},
+  fonts,
   typography: {
     mobile: {
       h3: {
-        fontFamily: "Poppins, sans-serif",
+        fontFamily: fonts.poppins,
         fontWeight: 500,
         fontSize: "1.5rem",
         lineHeight: "2rem",
@@ -36,22 +42,36 @@ export const theme = {
     },
     desktop: {
       h3: {
-        fontFamily: "Poppins, sans-serif",
+        fontFamily: fonts.poppins,
         fontWeight: 500,
         fontSize: "2.25rem",
         lineHeight: "2.75rem",
       },
     },
     body: {
+      small: {
+        medium: {
+          fontFamily: fonts.inter,
+          fontWeight: 500,
+          fontSize: "0.75rem",
+          lineHeight: "1.5rem",
+        },
+        bold: {
+          fontFamily: fonts.inter,
+          fontWeight: 700,
+          fontSize: "0.5rem",
+          lineHeight: "1.5rem",
+        },
+      },
       regular: {
         medium: {
-          fontFamily: "Inter, sans-serif",
+          fontFamily: fonts.inter,
           fontWeight: 500,
           fontSize: "1rem",
           lineHeight: "1.5rem",
         },
         bold: {
-          fontFamily: "Inter, sans-serif",
+          fontFamily: fonts.inter,
           fontWeight: 700,
           fontSize: "1rem",
           lineHeight: "1.5rem",
@@ -59,13 +79,13 @@ export const theme = {
       },
       big: {
         medium: {
-          fontFamily: "Inter, sans-serif",
+          fontFamily: fonts.inter,
           fontWeight: 500,
           fontSize: "1.125rem",
           lineHeight: "1.5rem",
         },
         bold: {
-          fontFamily: "Inter, sans-serif",
+          fontFamily: fonts.inter,
           fontWeight: 700,
           fontSize: "1.125rem",
           lineHeight: "1.5rem",
