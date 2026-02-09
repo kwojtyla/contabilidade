@@ -1,10 +1,6 @@
 import type { IconProps } from "@/types/icons";
 
-export const CertificateIcon: React.FC<IconProps> = ({
-  width,
-  height,
-  fill,
-}) => {
+export const CertificateIcon = ({ width, height, fill }: IconProps) => {
   return (
     <svg
       width={width || "37"}

@@ -1,6 +1,6 @@
 import type { IconProps } from "@/types/icons";
 
-export const LogoIcon: React.FC<IconProps> = ({ width, height }) => {
+export const LogoIcon = ({ width, height }: IconProps) => {
   return (
     <svg
       width={width || "33"}

@@ -1,6 +1,6 @@
 import type { IconProps } from "@/types/icons";
 
-export const AttendantIcon: React.FC<IconProps> = ({ width, height, fill }) => {
+export const AttendantIcon = ({ width, height, fill }: IconProps) => {
   return (
     <svg
       width={width || "32"}

@@ -1,6 +1,6 @@
 import type { IconProps } from "@/types/icons";
 
-export const LogoFullIcon: React.FC<IconProps> = ({ width, height }) => {
+export const LogoFullIcon = ({ width, height }: IconProps) => {
   return (
     <svg
       width={width || "185"}
@@ -9,7 +9,7 @@ export const LogoFullIcon: React.FC<IconProps> = ({ width, height }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_2004_282)">
+      <g clipPath="url(#clip0_2004_282)">
         <path
           d="M48.9345 6.97461C51.978 6.97461 53.9631 8.49547 54.6624 11.126H51.8891C51.4599 9.92343 50.4682 9.15267 48.9345 9.15267C46.8604 9.15267 45.484 10.6959 45.484 13.4176C45.484 16.1393 46.8587 17.7067 48.9345 17.7067C50.4682 17.7067 51.4154 17.0254 51.8891 15.7333H54.6624C53.9631 18.1832 51.9797 19.8847 48.9345 19.8847C45.3711 19.8847 42.8457 17.3436 42.8457 13.4176C42.8457 9.4916 45.3711 6.97461 48.9345 6.97461Z"
           fill="#232425"
