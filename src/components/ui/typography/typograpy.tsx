@@ -5,7 +5,7 @@ interface TypographyProps {
 }
 
 interface ParagraphProps extends TypographyProps {
-  size?: "regular" | "big";
+  size?: "small" | "regular" | "big";
   weight?: "medium" | "bold";
 }
 

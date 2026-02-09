@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     flex-direction: row-reverse;
-    max-width: 1280px;
+    max-width: 1024px;
     gap: 1.5rem;
   }
 `;

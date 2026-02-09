@@ -1,4 +1,4 @@
-import infoImage from "@/assets/info-image.webp";
+import infoImage from "@/assets/img/info-image.webp";
 import { SectionWrapper } from "@/components/layout/section-wrapper";
 import { H3, P, Strong } from "@/components/ui/typography";
 import {
